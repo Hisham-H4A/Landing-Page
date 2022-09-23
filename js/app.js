@@ -4,11 +4,11 @@ const secAddB = document.getElementById('secAdder'); //gets the button of adding
 const mainstuff = document.getElementById('mainblock'); //gets the main nameTag by it's id
 const topBtn = document.getElementById('topButton'); //gets the back to top button
 
-let counter = document.getElementsByTagName('section').length; //the counter which gets it's value from sections no. and increases while they increase
+let counter = document.getElementsByClassName('landing__container').length; //the counter which gets it's value from sections no. and increases as they increase
 
 // the function that adds  the first 4 links for starting the sectors of the page
 function addStartingLinks() {
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 1; i <= counter; i++) {
         let idd = "section" + i; //id of the section which it will point to
         let nameofsec = "Section " + i; ///the text to be in the link
 
